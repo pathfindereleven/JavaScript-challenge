@@ -12,6 +12,7 @@ function build_func(x) {           // build function
         let metadata = data.metadata;
         let match = metadata.filter(result => result.id == x);
         // make demographics panel
+        d3.select("#sample-metadata").html("");
         Object.entries(match[0]).forEach(([key,value]) => {
             d3.select("#sample-metadata").append("h5").text(`${key}: ${value}`); // append data by key value pair to demogrphics
         }); // end demographics portion start bar portion
