@@ -17,6 +17,6 @@ function build_func(x) {           // build function
         let trace2= {x:match1[0].otu_ids, y: match1[0].sample_values, text: match1[0].otu_labels, mode: "markers",marker: {size: match1[0].sample_values, color: match1[0].otu_ids, colorscale: "Earth"} }; // buble trace
         let layout = {title: "Bacteria Count", hovermode: "closest",xaxis: {title: "OTU ID"}};
         Plotly.newPlot("bubble", [trace2], layout)})};   // plot bubble chart
-startup();  // change option function changed to build_func
+startup();  // change option function changed to build_func in html
 
 
